@@ -1,0 +1,41 @@
+.maps {
+  //background: url("../img/jhkjh.png") ;
+  width: 100%;
+
+  .container {
+    position: relative;
+  }
+
+  &__container {
+    position: relative;
+    padding-bottom: 36.25%; /* 16:9 */
+    min-height: 500px;
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+#map{
+  height:400px;
+  width: 1150px;
+}
+
+.map-wrap {
+  height: 574px;
+  overflow-y: hidden;
+  iframe {
+    width: 100%;
+    margin-top: -48px;
+    pointer-events: none;
+  }
+}

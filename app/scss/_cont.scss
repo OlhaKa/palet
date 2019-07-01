@@ -1,0 +1,42 @@
+.cont {
+  &__block {
+    position: absolute;
+    max-width: 304px;
+    top: 50px;
+    right: 5%;
+    width: 100%;
+    height: 409px;
+    padding: 57px;
+    padding-bottom: 106px;
+    background: #ffffff;
+    z-index: 10;
+
+    &__text {
+      &__title {
+        margin-bottom: 42px;
+      }
+
+      &__list {
+        span {
+          font-weight: 700;
+          color: $text-color-black;
+        }
+
+        li {
+          margin-bottom: 15px;
+        }
+
+        a {
+          color: $text-color-black;
+          font-size: 12px;
+          font-weight: 400;
+          transition: $trans;
+
+          &:hover {
+            color: $accent;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.page-img {
+  margin: 62px 0 45px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.about {
+  h1 {
+    max-width: 535px;
+    color: #222222;
+    font-family: 'Oswald', sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 71px;
+    &:after {
+      content: '';
+      height: 5px;
+      width: 270px;
+      position: absolute;
+      left: -36px;
+      bottom: -14px;
+      background: $accent;
+    }
+  }
+}
+
+.about-info {
+  columns: 2;
+  column-gap: 25px;
+  margin-bottom: 132px;
+  p {
+    margin-bottom: 35px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    color: #555555;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22.91px;
+  }
+}

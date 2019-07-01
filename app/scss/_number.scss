@@ -1,0 +1,42 @@
+.number{
+  background-color: $text-color-black;
+  padding-top: 91px;
+  padding-bottom: 56px;
+  @include to($break_xs) {
+    padding-top: 41px;
+    padding-bottom: 74px;
+  }
+  &__row{
+display: flex;
+  }
+  &__item{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__record{
+      color: #ffffff;
+      font-family: $title-font;
+      @include fluid-type(30px, 52px);
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    &__decr{
+      opacity: 0.3;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 400;
+      margin-bottom: 38px;
+    }
+    &__border{
+      text-align: center;
+      span{
+        width: 10px;
+        height: 10px;
+        background-color: $accent;
+        border-radius: 10em;
+        display: inline-block;
+      }
+    }
+  }
+}

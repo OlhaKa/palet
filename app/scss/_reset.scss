@@ -1,0 +1,62 @@
+input:focus,
+button:focus {
+  outline: none;
+}
+
+input:active,
+button:active {
+  outline: none;
+}
+
+button:active,
+button:focus {
+  outline: none !important;
+}
+
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+
+
+b,
+strong {
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  //-webkit-touch-callout: none;
+  //-webkit-text-size-adjust: none;
+  //-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  //-webkit-tap-highlight-color: transparent;
+  //-webkit-user-select: none;
+}
+label{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: #dffaf8;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:active:focus,
+a:focus {
+  outline: 0 !important;
+  outline-color: transparent !important;
+  outline-width: 0 !important;
+  outline-style: none !important;
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+}

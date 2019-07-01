@@ -1,0 +1,21 @@
+@import "fonts";
+@import "libs";
+@import "vars";
+@import "header";
+@import "slider";
+@import "reset";
+@import "defold";
+@import "media";
+
+@import "about";
+@import "products";
+
+@import "record";// Always at the end
+@import "paragraph";// Always at the end
+@import "number";// Always at the end
+@import "footer";// Always at the end
+@import "map";// Always at the end
+@import "cont";// Always at the end
+@include reset();
+
+
