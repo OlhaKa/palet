@@ -18,10 +18,12 @@
         <div class="container">
             <div class="header__row">
                 <div class="header__logo">
-                    <div class="header__logo__img">
-                        <img src="img/logo.png" alt="">
-                    </div>
-                    <div class="header__logo__text"><span>PALET.COM.UA</span></div>
+                    <a href="">
+                        <div class="header__logo__img">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <div class="header__logo__text"><span>PALET.COM.UA</span></div>
+                    </a>
                 </div>
                 <div class="header__navWrap">
                     <nav class="header__nav">
@@ -147,36 +149,36 @@
             </div>
         </div>
     </section>
-<!--    <section class="maps">-->
-<!--        &lt;!&ndash;        <div class="maps__container">&ndash;&gt;-->
-<!--        &lt;!&ndash;            <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=19.643554687500004%2C44.10336537791152%2C41.61621093750001%2C53.4357192066942&amp;layer=mapnik"></iframe>&ndash;&gt;-->
-<!--        &lt;!&ndash;        </div>&ndash;&gt;-->
-<!--        <div class="container">-->
+    <!--    <section class="maps">-->
+    <!--        &lt;!&ndash;        <div class="maps__container">&ndash;&gt;-->
+    <!--        &lt;!&ndash;            <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=19.643554687500004%2C44.10336537791152%2C41.61621093750001%2C53.4357192066942&amp;layer=mapnik"></iframe>&ndash;&gt;-->
+    <!--        &lt;!&ndash;        </div>&ndash;&gt;-->
+    <!--        <div class="container">-->
 
-<!--            <div class="cont__block">-->
-<!--                <div class="cont__block__text">-->
-<!--                    <div class="cont__block__text__title subtitle">-->
-<!--                        <h3>Контакты</h3>-->
-<!--                    </div>-->
-<!--                    <ul class="cont__block__text__list">-->
-<!--                        <li><span>Отдел продаж</span></li>-->
-<!--                        <li><a href="#">( 0 9 3 ) 7 0 0 0 4 9 8</a></li>-->
-<!--                        <li><a href="#">( 0 6 7 ) 2 3 9 8 7 4 9</a></li>-->
-<!--                    </ul>-->
-<!--                    <ul class="cont__block__text__list">-->
-<!--                        <li><span>Отдел закупок</span></li>-->
-<!--                        <li><a href="#">( 0 9 3 ) 5 3 4 3 2 2 3</a></li>-->
-<!--                        <li><a href="#">( 0 6 7 ) 4 3 3 6 6 5 5-->
-<!--                        </a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+    <!--            <div class="cont__block">-->
+    <!--                <div class="cont__block__text">-->
+    <!--                    <div class="cont__block__text__title subtitle">-->
+    <!--                        <h3>Контакты</h3>-->
+    <!--                    </div>-->
+    <!--                    <ul class="cont__block__text__list">-->
+    <!--                        <li><span>Отдел продаж</span></li>-->
+    <!--                        <li><a href="#">( 0 9 3 ) 7 0 0 0 4 9 8</a></li>-->
+    <!--                        <li><a href="#">( 0 6 7 ) 2 3 9 8 7 4 9</a></li>-->
+    <!--                    </ul>-->
+    <!--                    <ul class="cont__block__text__list">-->
+    <!--                        <li><span>Отдел закупок</span></li>-->
+    <!--                        <li><a href="#">( 0 9 3 ) 5 3 4 3 2 2 3</a></li>-->
+    <!--                        <li><a href="#">( 0 6 7 ) 4 3 3 6 6 5 5-->
+    <!--                        </a></li>-->
+    <!--                    </ul>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
 
-<!--    </section>-->
-    <div class="map-wrap">
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Cu6eFfct7OaSsTeb0hBIZ-lM7SVbfYeO" width="1000" height="620"></iframe>
-    </div>
+    <!--    </section>-->
+<!--    <div class="map-wrap">-->
+<!--        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Cu6eFfct7OaSsTeb0hBIZ-lM7SVbfYeO" width="1000" height="620"></iframe>-->
+<!--    </div>-->
 </main>
 
 <!--<div class="container">-->
@@ -208,50 +210,49 @@
 
 
 <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
-<script type='text/javascript' src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js'></script>
+<!--<script type='text/javascript' src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js'></script>-->
 <!--<script src="libs/wow/wow.min.js"></script>-->
 <script src="js/common.js"></script>
-<script src="js/markers.json"></script>
-<script>
-    var mylat = '50.58007';
-    var mylong = '-3.75578';
-    var myzoom = '10';
-    var map = L.map('map').setView([mylat, mylong], myzoom);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 17,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+<!--<script>-->
+<!--    var mylat = '50.58007';-->
+<!--    var mylong = '-3.75578';-->
+<!--    var myzoom = '10';-->
+<!--    var map = L.map('map').setView([mylat, mylong], myzoom);-->
+<!--    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {-->
+<!--        maxZoom: 17,-->
+<!--        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'-->
+<!--    }).addTo(map);-->
 
-    L.marker([mylat, mylong]).addTo(map).bindPopup("<b>This is Haytor!</b>").openPopup();
-    L.circle([mylat, mylong], 500, {
-        color: 'red',
-        fillColor: '#f2d5df',
-        fillOpacity: 0.2
-    }).addTo(map).bindPopup("");
+<!--    L.marker([mylat, mylong]).addTo(map).bindPopup("<b>This is Haytor!</b>").openPopup();-->
+<!--    L.circle([mylat, mylong], 500, {-->
+<!--        color: 'red',-->
+<!--        fillColor: '#f2d5df',-->
+<!--        fillOpacity: 0.2-->
+<!--    }).addTo(map).bindPopup("");-->
 
-    markers = [{
-        "name": "Supermarket",
-        "url": "",
-        "lat": 50.54086,
-        "lng": -3.60219
-    }, {
-        "name": "Information Centre",
-        "url": "http://www.dartmoor.gov.uk/",
-        "lat": 50.58093,
-        "lng": -3.7453
-    }];
-    for (var i = 0; i < markers.length; ++i) {
-        L.marker([markers[i].lat, markers[i].lng], {
-            icon: new L.DivIcon({
-                className: 'my-div-icon',
-                html: '<span class="my-map-label">' + markers[i].name + '</span>'
-            })
-        }).addTo(map);
+<!--    markers = [{-->
+<!--        "name": "Supermarket",-->
+<!--        "url": "",-->
+<!--        "lat": 50.54086,-->
+<!--        "lng": -3.60219-->
+<!--    }, {-->
+<!--        "name": "Information Centre",-->
+<!--        "url": "http://www.dartmoor.gov.uk/",-->
+<!--        "lat": 50.58093,-->
+<!--        "lng": -3.7453-->
+<!--    }];-->
+<!--    for (var i = 0; i < markers.length; ++i) {-->
+<!--        L.marker([markers[i].lat, markers[i].lng], {-->
+<!--            icon: new L.DivIcon({-->
+<!--                className: 'my-div-icon',-->
+<!--                html: '<span class="my-map-label">' + markers[i].name + '</span>'-->
+<!--            })-->
+<!--        }).addTo(map);-->
 
-        L.marker([markers[i].lat, markers[i].lng]).addTo(map).bindPopup(markers[i].name);
-    }
+<!--        L.marker([markers[i].lat, markers[i].lng]).addTo(map).bindPopup(markers[i].name);-->
+<!--    }-->
 
-</script>
+<!--</script>-->
 </body>
 
 </html>

@@ -14,21 +14,18 @@
   }
 
   &__logo {
-    display: flex;
-    align-items: center;
-
     &__img {
       margin-right: 9px;
     }
-
-    &__text {
-      span {
-        font-family: $title-font;
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 21.76px;
-        text-transform: uppercase;
-      }
+    a {
+      display: flex;
+      align-items: center;
+      font-family: $title-font;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 21.76px;
+      text-transform: uppercase;
+      color: #000000;
     }
   }
 

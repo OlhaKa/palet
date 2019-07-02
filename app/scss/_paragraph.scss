@@ -35,6 +35,26 @@
     transform-origin: center;
   }
 }
+//.arrow-top {
+//  position: relative;
+//  &:before {
+//    position: absolute;
+//    top: -12px;
+//    right: -12px;
+//    width: 0;
+//    height: 100%;
+//    content: url("../img/arrow-border.png");
+//    transform: rotate(30deg);
+//    transition: .2s;
+//    overflow: hidden;
+//  }
+//  &.active {
+//    &:before {
+//      width: 145px;
+//      overflow: visible;
+//    }
+//  }
+//}
 
 .scheme-row {
   display: flex;
@@ -93,5 +113,39 @@
       text-align: center;
       line-height: 47px;
     }
+  }
+}
+
+.scheme-card:nth-child(1):before {
+  right: 0;
+}
+.scheme-card:nth-child(1).next {
+  &:before {
+    height: calc(100% - 66px);
+  }
+}
+
+.scheme-card:nth-child(2):before {
+  right: 0;
+
+}
+.scheme-card:nth-child(2).next {
+  &:before {
+    width: calc(100% - 80px);
+  }
+}
+
+.scheme-card:nth-child(4):before {
+  bottom: 0;
+}
+.scheme-card:nth-child(4).next {
+  &:before {
+    height: calc(100% - 66px);
+  }
+}
+
+.scheme-card:nth-child(3).next {
+  &:before {
+    width: calc(100% - 80px);
   }
 }
