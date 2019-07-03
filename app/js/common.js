@@ -3,12 +3,12 @@ $(document).ready(function () {
 
     $('.header__burger').click(function() {
         $(this).toggleClass('active');
-        $('.header__navWrap').stop().slideToggle(400,
-            function () {
-                if ($(this).css("display") === "none") {
-                    $(this).removeAttr("style");
-                }
-            });
+        // $('.header__navWrap').stop().slideToggle(400,
+        //     function () {
+        //         if ($(this).css("display") === "none") {
+        //             $(this).removeAttr("style");
+        //         }
+        //     });
     });
     var a = 0;
     $(window).scroll(function() {
@@ -40,15 +40,26 @@ $(document).ready(function () {
             });
             a = 1;
         }
-
-    });
-    $('.map-wrap').click(function () {
-        $('.map-wrap iframe').css("pointer-events", "auto");
     });
 
-    $( ".map-wrap" ).mouseleave(function() {
-        $('.map-wrap iframe').css("pointer-events", "none");
-    });
+    function activateMap(map, frame) {
+        $(map).click(function () {
+            $(frame).css("pointer-events", "auto");
+        });
+    }
+    activateMap('.map-wrap', '.map-wrap iframe');
+    activateMap('.contacts-map-wrap', '.contacts-map-wrap iframe');
+
+
+    function disableMap(map, frame) {
+        $(map).mouseleave(function() {
+            $(frame).css("pointer-events", "none");
+        });
+    }
+
+    disableMap(".map-wrap", '.map-wrap iframe');
+    disableMap(".contacts-map-wrap", '.contacts-map-wrap iframe');
+
 
     hoverEffect($('.scheme-card:nth-child(1)'), $('.scheme-card:nth-child(2)'));
     hoverEffect($('.scheme-card:nth-child(2)'), $('.scheme-card:nth-child(4)'));
@@ -58,7 +69,27 @@ $(document).ready(function () {
         $(card).hover(function () {
             $(next).toggleClass('next')
         })
-    }
+    };
+
+    $(document).delegate('.open', 'click', function(event){
+        $(this).addClass('oppenned');
+        $('.header__navWrap').stop().slideToggle(400,
+            function () {
+                if ($(this).css("display") === "none") {
+                    $(this).removeAttr("style");
+                }
+            });
+        event.stopPropagation();
+    });
+    $(document).delegate('body', 'click', function(event) {
+        $('.open').removeClass('oppenned');
+    });
+    $(document).delegate('.cls', 'click', function(event){
+        $('.open').removeClass('oppenned');
+
+
+        event.stopPropagation();
+    });
 
 
 });

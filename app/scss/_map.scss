@@ -25,17 +25,38 @@
   }
 
 }
-#map{
-  height:400px;
-  width: 1150px;
-}
+//#map{
+//  height:400px;
+//  width: 1150px;
+//}
 
 .map-wrap {
   height: 574px;
   overflow-y: hidden;
+  margin-bottom: -50px;
   iframe {
     width: 100%;
     margin-top: -48px;
     pointer-events: none;
+  }
+}
+
+.contacts-map-wrap {
+  margin-top: 27px;
+  margin-bottom: -4px;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    background: #ffffff;
+    height: 48px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  iframe {
+    width: 100%;
+    pointer-events: none;
+
   }
 }
