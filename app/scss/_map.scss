@@ -49,9 +49,10 @@
     position: absolute;
     content: '';
     background: #ffffff;
-    height: 48px;
+    height: 49px;
     width: 100%;
     z-index: 1;
+    top: -1px;
   }
 
   iframe {

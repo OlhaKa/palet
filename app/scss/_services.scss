@@ -21,16 +21,21 @@
   .service {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 70px;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 26px;
     .img-block {
-      max-width: 100%;
-      height: auto;
+      min-height: 280px;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
+
     h2 {
       color: #000;
       font-family: Oswald,sans-serif;

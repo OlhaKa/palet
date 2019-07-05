@@ -3,13 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Palet</title>
+    <title>PALET.COM.UA</title>
     <meta name="" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="font/fontawesome-5.7.2/all.css">
-    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css"/>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -18,24 +16,20 @@
         <div class="container">
             <div class="header__row">
                 <div class="header__logo">
-                    <a href="">
+                    <a href="index.html">
                         <div class="header__logo__img">
                             <img src="img/logo.png" alt="">
                         </div>
                         <div class="header__logo__text"><span>PALET.COM.UA</span></div>
                     </a>
                 </div>
-                <div class="open">
-                    <span class="cls"></span>
-                    <span>
-        <ul class="sub-menu ">
                 <div class="header__navWrap">
                     <nav class="header__nav">
                         <ul class="header__nav__list">
-                            <li><a class="cl-effect-1" href="">О нас</a></li>
-                            <li><a class="cl-effect-1" href="">Продукция</a></li>
-                            <li><a class="cl-effect-1" href="">Услуги</a></li>
-                            <li><a class="cl-effect-1" href="">Контакты</a></li>
+                            <li class="current-link"><a href="about.html">О нас</a></li>
+                            <li><a href="products.html">Продукция</a></li>
+                            <li><a href="services.html">Услуги</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                     <ul class="header__cont">
@@ -47,20 +41,14 @@
                         <li><a href="">EN</a></li>
                     </ul>
                 </div>
-        </ul>
-    </span>
-                    <span class="cls"></span>
-                </div>
-
-
-<!--                <button class="header__burger ">-->
-<!--                    <span></span>-->
-<!--                </button>-->
+                <button class="header__burger ">
+                    <span></span>
+                </button>
             </div>
         </div>
     </div>
 </header>
-<main>
+<main class="home">
     <section class="record">
         <div class="container">
             <div class="record__row">
@@ -153,48 +141,14 @@
                     <div class="number__item__record"><span class="counter-value" data-count="20">0</span></div>
                     <div class="number__item__decr"><span>Стран мира</span></div>
                     <div class="number__item__border"><span></span></div>
-
-
                 </div>
             </div>
         </div>
     </section>
-    <!--    <section class="maps">-->
-    <!--        &lt;!&ndash;        <div class="maps__container">&ndash;&gt;-->
-    <!--        &lt;!&ndash;            <iframe  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=19.643554687500004%2C44.10336537791152%2C41.61621093750001%2C53.4357192066942&amp;layer=mapnik"></iframe>&ndash;&gt;-->
-    <!--        &lt;!&ndash;        </div>&ndash;&gt;-->
-    <!--        <div class="container">-->
-
-    <!--            <div class="cont__block">-->
-    <!--                <div class="cont__block__text">-->
-    <!--                    <div class="cont__block__text__title subtitle">-->
-    <!--                        <h3>Контакты</h3>-->
-    <!--                    </div>-->
-    <!--                    <ul class="cont__block__text__list">-->
-    <!--                        <li><span>Отдел продаж</span></li>-->
-    <!--                        <li><a href="#">( 0 9 3 ) 7 0 0 0 4 9 8</a></li>-->
-    <!--                        <li><a href="#">( 0 6 7 ) 2 3 9 8 7 4 9</a></li>-->
-    <!--                    </ul>-->
-    <!--                    <ul class="cont__block__text__list">-->
-    <!--                        <li><span>Отдел закупок</span></li>-->
-    <!--                        <li><a href="#">( 0 9 3 ) 5 3 4 3 2 2 3</a></li>-->
-    <!--                        <li><a href="#">( 0 6 7 ) 4 3 3 6 6 5 5-->
-    <!--                        </a></li>-->
-    <!--                    </ul>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-
-    <!--    </section>-->
     <div class="map-wrap">
         <iframe src="https://www.google.com/maps/d/embed?mid=1l2JpiHpObsWL649yQHozK9T2XP65mUc0" width="640" height="573"></iframe>
     </div>
 </main>
-
-<!--<div class="container">-->
-<!--    <div id="map" style="height: 440px; border: 1px solid #AAA;"></div>-->
-<!--</div>-->
-
 <footer>
     <div class="footer">
         <div class="container">
@@ -217,52 +171,8 @@
         </div>
     </div>
 </footer>
-
-
-<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
-<!--<script type='text/javascript' src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js'></script>-->
-<!--<script src="libs/wow/wow.min.js"></script>-->
+<script type='text/javascript' src='libs/jquery/jquery-3.4.1.min.js'></script>
 <script src="js/common.js"></script>
-<!--<script>-->
-<!--    var mylat = '50.58007';-->
-<!--    var mylong = '-3.75578';-->
-<!--    var myzoom = '10';-->
-<!--    var map = L.map('map').setView([mylat, mylong], myzoom);-->
-<!--    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {-->
-<!--        maxZoom: 17,-->
-<!--        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'-->
-<!--    }).addTo(map);-->
-
-<!--    L.marker([mylat, mylong]).addTo(map).bindPopup("<b>This is Haytor!</b>").openPopup();-->
-<!--    L.circle([mylat, mylong], 500, {-->
-<!--        color: 'red',-->
-<!--        fillColor: '#f2d5df',-->
-<!--        fillOpacity: 0.2-->
-<!--    }).addTo(map).bindPopup("");-->
-
-<!--    markers = [{-->
-<!--        "name": "Supermarket",-->
-<!--        "url": "",-->
-<!--        "lat": 50.54086,-->
-<!--        "lng": -3.60219-->
-<!--    }, {-->
-<!--        "name": "Information Centre",-->
-<!--        "url": "http://www.dartmoor.gov.uk/",-->
-<!--        "lat": 50.58093,-->
-<!--        "lng": -3.7453-->
-<!--    }];-->
-<!--    for (var i = 0; i < markers.length; ++i) {-->
-<!--        L.marker([markers[i].lat, markers[i].lng], {-->
-<!--            icon: new L.DivIcon({-->
-<!--                className: 'my-div-icon',-->
-<!--                html: '<span class="my-map-label">' + markers[i].name + '</span>'-->
-<!--            })-->
-<!--        }).addTo(map);-->
-
-<!--        L.marker([markers[i].lat, markers[i].lng]).addTo(map).bindPopup(markers[i].name);-->
-<!--    }-->
-
-<!--</script>-->
 </body>
 
 </html>
