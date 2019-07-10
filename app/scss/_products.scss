@@ -6,6 +6,7 @@
     font-size: 33px;
     font-weight: 700;
     position: relative;
+    margin-top: -17px;
     &:after {
       content: '';
       height: 5px;
@@ -40,7 +41,8 @@
         width: 100%;
         padding: 9px 0;
       }
-      &:hover {
+      &:hover,
+      &.current-cat {
         border: 1px solid $accent;
       }
     }

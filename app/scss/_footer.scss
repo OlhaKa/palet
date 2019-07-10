@@ -7,9 +7,6 @@
   }
   &__logo{
     margin-right: 30px;
-    @include to($break_xs) {
-      margin-left: 10px;
-    }
     img {
       width: 32px;
       height: auto;
