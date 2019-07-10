@@ -42,6 +42,16 @@ $(document).ready(function () {
         });
     }
 
+    hoverEffect($('.scheme-card:nth-child(1)'), $('.scheme-card:nth-child(2)'));
+    hoverEffect($('.scheme-card:nth-child(2)'), $('.scheme-card:nth-child(4)'));
+    hoverEffect($('.scheme-card:nth-child(3)'), $('.scheme-card:nth-child(1)'));
+    hoverEffect($('.scheme-card:nth-child(4)'), $('.scheme-card:nth-child(3)'));
+    function hoverEffect(card, next) {
+        $(card).hover(function () {
+            $(next).toggleClass('next')
+        })
+    }
+
     // ==========HOME PAGE end============
 
 
@@ -64,16 +74,6 @@ $(document).ready(function () {
     disableMap(".map-wrap", '.map-wrap iframe');
     disableMap(".contacts-map-wrap", '.contacts-map-wrap iframe');
 
-
-    hoverEffect($('.scheme-card:nth-child(1)'), $('.scheme-card:nth-child(2)'));
-    hoverEffect($('.scheme-card:nth-child(2)'), $('.scheme-card:nth-child(4)'));
-    hoverEffect($('.scheme-card:nth-child(3)'), $('.scheme-card:nth-child(1)'));
-    hoverEffect($('.scheme-card:nth-child(4)'), $('.scheme-card:nth-child(3)'));
-    function hoverEffect(card, next) {
-        $(card).hover(function () {
-            $(next).toggleClass('next')
-        })
-    }
 
 });
 
