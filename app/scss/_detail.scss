@@ -30,8 +30,8 @@
   columns: 2;
   column-gap: 25px;
   margin-bottom: 132px;
-  &>div {
-    margin-bottom: 35px;
+  p {
+    margin-top: 35px;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
@@ -40,6 +40,9 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 22.91px;
+    &:first-child {
+      margin-top: 0;
+    }
   }
   ul {
     color: #555555;
@@ -48,6 +51,10 @@
     font-weight: 500;
     line-height: 22.91px;
     padding-left: 15px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    break-inside: avoid-column;
     li {
       position: relative;
       &:before {
