@@ -30,7 +30,7 @@
   columns: 2;
   column-gap: 25px;
   margin-bottom: 132px;
-  p {
+  &>div {
     margin-bottom: 35px;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
@@ -40,5 +40,25 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 22.91px;
+  }
+  ul {
+    color: #555555;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22.91px;
+    padding-left: 15px;
+    li {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background: #ea0000;
+        top: 9px;
+        left: -12px;
+      }
+    }
   }
 }
