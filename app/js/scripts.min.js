@@ -74,6 +74,11 @@ $(document).ready(function () {
     disableMap(".map-wrap", '.map-wrap iframe');
     disableMap(".contacts-map-wrap", '.contacts-map-wrap iframe');
 
+    $('.pic-slider').slick({
+        slidesToShow: 1,
+        infinite: false
+    });
 
+    $('[data-fancybox="prod-photo"]').fancybox();
 });
 
